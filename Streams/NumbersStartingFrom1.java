@@ -15,5 +15,7 @@ public class NumbersStartingFrom1 {
         }
 
         stringList.stream().filter(i -> i.startsWith("1")).forEach(System.out::println);*/
+
+        myList.stream().map(s -> s+"").filter(s -> s.startsWith("1")).forEach(System.out::println);
     }
 }

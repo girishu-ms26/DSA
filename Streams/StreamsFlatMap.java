@@ -9,7 +9,9 @@ public class StreamsFlatMap {
             Arrays.asList("b")
         );
 
-        myList.stream().flatMap(Collection::stream).forEach(i -> System.out.println(i.toUpperCase()));
+//        myList.stream().flatMap(Collection::stream).forEach(i -> System.out.println(i.toUpperCase()));
+//        myList.stream().flatMap(Collection::stream).forEach(System.out::println);
+
         myList.stream().flatMap(Collection::stream).forEach(System.out::println);
     }
 }

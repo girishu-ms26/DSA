@@ -8,33 +8,33 @@ public class AmazingSubarrays {
         System.out.println(solve(A));
     }
 
-    /*public static int solve(String A) {
-        A = A.toLowerCase();
-        String temp = "";
-        int index = 0;
-        int count = 0;
-        ArrayList<String> list = new ArrayList<>();
-        String sub = A.substring(index,A.length());
-        for(int i=0;i<=sub.length()-1;i++){
-            for(int j=0;j<=sub.length()-1;j++){
-                temp = sub.substring(index,j+1);
-                if(temp.charAt(0) == 'a' || temp.charAt(0) == 'e' || temp.charAt(0) == 'i' || temp.charAt(0) == 'o' || temp.charAt(0) == 'u'){
-                    list.add(temp);
-                } else {
-                    temp="";
-                    break;
-                }
-                temp="";
-            }
-            count++;
-            sub = A.substring(count,A.length());
-            index=0;
-            i=-1;
-            if(count==A.length())
-                break;
-        }
-        return list.size() % 10003;
-    }*/
+//    public static int solve(String A) {
+//        A = A.toLowerCase();
+//        String temp = "";
+//        int index = 0;
+//        int count = 0;
+//        ArrayList<String> list = new ArrayList<>();
+//        String sub = A.substring(index,A.length());
+//        for(int i=0;i<=sub.length()-1;i++){
+//            for(int j=0;j<=sub.length()-1;j++){
+//                temp = sub.substring(index,j+1);
+//                if(temp.charAt(0) == 'a' || temp.charAt(0) == 'e' || temp.charAt(0) == 'i' || temp.charAt(0) == 'o' || temp.charAt(0) == 'u'){
+//                    list.add(temp);
+//                } else {
+//                    temp="";
+//                    break;
+//                }
+//                temp="";
+//            }
+//            count++;
+//            sub = A.substring(count,A.length());
+//            index=0;
+//            i=-1;
+//            if(count==A.length())
+//                break;
+//        }
+//        return list.size() % 10003;
+//    }
 
     public static int solve(String A) {
         A = A.toLowerCase();

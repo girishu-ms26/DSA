@@ -1,4 +1,4 @@
-package Strings;
+package LeetCode;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -6,13 +6,15 @@ import java.util.Collections;
 public class LongestCommonPrefix {
     public static void main(String[]args){
         ArrayList<String> A = new ArrayList<>();
-        A.add("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+        /*A.add("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
         A.add("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
         A.add("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
         A.add("aaaaaaaaaaaaaaaaaaaaaaaaa");
         A.add("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
         A.add("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
-        A.add("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+        A.add("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");*/
+        A.add("ab");
+        A.add("a");
         System.out.println(longestCommonPrefix(A));
     }
 
