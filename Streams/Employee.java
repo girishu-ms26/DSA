@@ -1,9 +1,6 @@
 package Streams;
 
-import jdk.nashorn.internal.objects.annotations.Getter;
-
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
@@ -19,9 +16,9 @@ public class Employee {
         return employeeAge;
     }
     public static void main(String[]args) {
-        Employee emp1 = new Employee("emp3",59);
-        Employee emp2 = new Employee("emp1",25);
-        Employee emp3 = new Employee("emp2",23);
+        Employee emp1 = new Employee("emp3", 59);
+        Employee emp2 = new Employee("emp1", 25);
+        Employee emp3 = new Employee("emp2", 23);
 
         List<Employee> employees = new ArrayList<>();
         employees.add(emp1);
