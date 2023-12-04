@@ -1,14 +1,10 @@
-package LinkedList;// Java program for reversing the linked list
+package interviewPrep;// Java program for reversing the linked list
 
 class LinkedList {
-
     static Node head;
-
     static class Node {
-
         int data;
         Node next;
-
         Node(int d)
         {
             data = d;
@@ -17,12 +13,10 @@ class LinkedList {
     }
 
     /* Function to reverse the linked list */
-    Node reverse(Node node)
-    {
-
+    private Node reverse(Node node) {
         Node prev = null;
-        Node current = node;
         Node next = null;
+        Node current = node;
         while(current != null) {
             next = current.next;
             current.next = prev;
@@ -30,7 +24,7 @@ class LinkedList {
             current = next;
         }
         node = prev;
-        return  node;
+        return node;
     }
 
     // prints content of double linked list
