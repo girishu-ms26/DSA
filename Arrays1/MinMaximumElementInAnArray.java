@@ -1,8 +1,10 @@
 package Arrays1;
 
-class pair {
+import java.util.Arrays;
+
+class Pair {
     long first,second;
-    public pair(long first, long second){
+    public Pair(long first, long second){
         this.first = first;
         this.second = second;
     }
@@ -13,7 +15,7 @@ public class MinMaximumElementInAnArray {
     long[] arr = {100,1,5,999,200,50,9999,1234};
     System.out.println(maximumElement(arr).first +" "+maximumElement(arr).second);
     }
-    public static pair maximumElement(long[] arr) {
+    public static Pair maximumElement(long[] arr) {
         long min = arr[0];
         long max = arr[0];
         for(int i=1;i<arr.length;i++){
@@ -26,7 +28,10 @@ public class MinMaximumElementInAnArray {
                 max = arr[i];
             }
         }
-        pair minMax = new pair(min,max);
+        Pair minMax = new Pair(min,max);
         return minMax;
+        /*Arrays.stream(arr).min();
+        Arrays.stream(arr).max();
+        return new Pair(Arrays.stream(arr).min().getAsLong(),Arrays.stream(arr).max().getAsLong());*/
     }
 }

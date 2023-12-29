@@ -1,7 +1,6 @@
 package LeetCode;
 
-import java.util.*;
-
+//https://leetcode.com/problems/k-th-symbol-in-grammar/description/
 public class KthSymbol {
     public static void main(String[]args) {
         System.out.println(kthGrammar(4,5));

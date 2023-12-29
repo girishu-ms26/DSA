@@ -12,7 +12,7 @@ public class DuplicateElements {
                 .forEach(System.out::println);*/
 
         String s = "abcdefghhhi";
-        Map<Character,Long> result = s.chars().mapToObj(c -> (char) c)
-                .collect(Collectors.groupingBy(c -> c,Collectors.counting()));
+//        Map<Character,Long> result = s.chars().mapToObj(c -> (char) c)
+//                .collect(Collectors.groupingBy(c -> c,Collectors.counting()));
     }
 }

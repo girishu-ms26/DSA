@@ -7,9 +7,6 @@ public class BubbleSort {
         int[] array = {4,5,3,2,3,1,0};
         int[] arraySorted = bubbleSort(array);
         Arrays.stream(arraySorted).forEach(System.out::println);
-        List<Integer> list = new ArrayList<>(Arrays.asList(1,2,3,4,5,6,7,8,9));
-        Collections.sort(list,Comparator.reverseOrder());
-        list.stream().forEach(System.out::println);
     }
     public static int[] bubbleSort(int[] array) {
         int n = array.length;

@@ -1,7 +1,6 @@
 package Arrays1;
 
-import java.util.Arrays;
-
+//https://leetcode.com/problems/sort-colors/submissions/1105946397/
 public class SortColours {
     public static void main(String[]args) {
         int[] array = {2,0,2,1,1,0};

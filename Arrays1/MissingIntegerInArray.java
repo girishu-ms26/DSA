@@ -1,5 +1,5 @@
 package Arrays1;
-
+//https://leetcode.com/problems/missing-number/submissions/1104181097/
 public class MissingIntegerInArray {
     public static void main(String[]args){
         int[] arr = {2,3,4,1,6,7};

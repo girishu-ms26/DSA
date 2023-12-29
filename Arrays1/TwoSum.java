@@ -1,7 +1,7 @@
 package Arrays1;
 
 import java.util.*;
-
+//https://leetcode.com/problems/two-sum/description/
 public class TwoSum {
     public static void main(String[]args) {
         int[] nums = {2,15,11,15,7};
