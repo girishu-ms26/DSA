@@ -1,51 +1,42 @@
 package interviewPrep;
 
+import java.sql.SQLException;
 import java.util.*;
-import java.util.stream.Collectors;
 
-public class Employee implements Comparator<Employee> {
+import static interviewPrep.Employee.nameComparator;
+
+public class Employee implements Comparable<Employee> {
     int employeeId;
     String employeeName;
 
     public Employee(int employeeId, String employeeName) {
-        this.employeeId = employeeId;
-        this.employeeName = employeeName;
+        this.employeeId=employeeId;
+        this.employeeName=employeeName;
     }
-    public Employee() {
-    }
-    public int getEmployeeId() {
-        return employeeId;
-    }
-
-    public void setEmployeeId(int employeeId) {
-        this.employeeId = employeeId;
-    }
-
-    public String getEmployeeName() {
-        return employeeName;
-    }
-
-    public void setEmployeeName(String employeeName) {
-        this.employeeName = employeeName;
-    }
-
 
     @Override
-    public int compare(Employee o1, Employee o2) {
-        return Integer. compare(o1.employeeId,o2.employeeId);
+    public int compareTo(Employee o) {
+        return this.employeeId - o.employeeId;
     }
+    @Override
+    public String toString(){
+        return "[employeeId="+this.employeeId+",employeeName="+this.employeeName+"]";
+    }
+    public static Comparator<Employee> nameComparator = new Comparator<Employee>() {
+        @Override
+        public int compare(Employee o1, Employee o2) {
+            return o1.employeeName.compareTo(o2.employeeName);
+        }
+    };
 }
 class Test {
     public static void main(String[]args) {
-        List<Employee> empList = new ArrayList<>();
-        empList.add(new Employee(1,"girishu1"));
-        empList.add(new Employee(3,"girishu3"));
-        empList.add(new Employee(2,"girishu2"));
-        empList.add(new Employee(0,"girishu0"));
-        Employee emp = new Employee();
+        Employee[] empArr = new Employee[3];
+        empArr[0] = new Employee(1,"Girishu3");
+        empArr[1] = new Employee(3,"Girishu2");
+        empArr[2] = new Employee(2,"Girishu1");
+        Arrays.sort(empArr,nameComparator);
+        System.out.println("sorted"+Arrays.toString(empArr));
 
-//        Collections.sort(empList,emp);
-//        empList.stream().forEach(i -> System.out.println(i.employeeId+" "+i.employeeName));
-        empList.stream().sorted(Comparator.comparing(i -> i.employeeId)).forEach(i -> System.out.println(i.employeeId+" "+i.employeeName));
     }
 }
