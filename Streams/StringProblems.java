@@ -30,11 +30,9 @@ public class StringProblems {
 //                .summaryStatistics();
 
         // get count of each character in string
-//        String s = "abcdde";
-//        Map<Object, Long> map = s.chars().mapToObj(c->(char) c).collect(Collectors.groupingBy(c->(char) c,Collectors.counting()));
-//        for(Map.Entry<Object, Long> key : map.entrySet()) {
-//            System.out.println(key.getKey()+" "+key.getValue());
-//        }
+        String s = "abcdde";
+        s.chars().mapToObj(c -> (char) c).collect(Collectors.groupingBy(Function.identity(),LinkedHashMap::new,Collectors.counting()))
+                .entrySet().stream().forEach((v) -> System.out.println(v));
 
         //find first occurrence in an arraylist whose object is names as Delhi using stream api
 //        Arrays.asList("bengaluru","bangalore","mangalore","delhi","delhi")
