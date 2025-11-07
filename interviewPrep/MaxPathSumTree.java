@@ -1,7 +1,5 @@
 package interviewPrep;
 
-import sun.reflect.generics.tree.Tree;
-
 class TreeNode {
     int val;
     TreeNode left;
