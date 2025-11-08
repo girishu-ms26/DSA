@@ -1,6 +1,5 @@
 package Hashmap;
 
-import java.util.EnumMap;
 import java.util.HashMap;
 
 public class Employee {
@@ -54,7 +53,7 @@ public class Employee {
         int result = 1;
         result = result * prime + id;
         result = result * prime + ((firstName==null) ? 0 : firstName.hashCode());
-        result = result * prime + ((firstName==null) ? 0 : lastName.hashCode());
+        result = result * prime + ((lastName==null) ? 0 : lastName.hashCode());
         result = result * prime + salary;
         return result;
     }
