@@ -7,7 +7,7 @@ public class RecordTest {
     }
 
     public static void main(String[] args) {
-        Person p = new Person("Girishu", 26);
+        Person p = new Person("Girishu ", 26);
         System.out.println(p.name);
     }
 
