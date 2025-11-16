@@ -1,6 +1,6 @@
 package java17;
 
-public class SealedClasses {
+public sealed class SealedClasses permits B, C {
 
 }
 
@@ -8,10 +8,10 @@ sealed interface A permits B, C {
 
 }
 
-final class B implements A {
+final class B extends SealedClasses implements A {
 
 }
 
-final class C implements A {
+final class C extends SealedClasses implements A {
 
 }
